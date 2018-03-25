@@ -216,6 +216,7 @@ if __name__ == "__main__":
     
     # ملاحظة إذا حددنا فقط الإسم ولم نحدد المسار في file_template
     #سيتم الحفظ في مجلد الفيديو في مجلد المنزل الخاص بالمستخدم إن لم يكن مجلد الفيديو موجود سيتم الحفظ في مجلد المنزل
+    # ملاحظة اخرى إن وجدو سيتم تلقائيا تحديد تاريخ ووقت بدأ التسجيل بدل %d %t
     screencast = Screencast(file_template="Record-%d-%t.webm",draw_cursor="true",framerate="30",\
                 pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
     
