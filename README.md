@@ -17,8 +17,6 @@ sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 python-dbus python3-
 
 # Screencast()
 
-input:
-
 file_template: the template for the filename to use  #default "Record-%d-%t" (String)
 
 draw_cursor : Show/Hide Mouse Cursor (true or false) #default "true" (String)
@@ -40,8 +38,6 @@ success: whether stopping the recording was successful (True Or False)
 
 
 # ScreencastArea()
-
-input:
 
 x: the X coordinate of the area to capture (int)
 
