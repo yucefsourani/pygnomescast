@@ -38,6 +38,7 @@ filename_used: the file where the screencast is being saved (String)
 # ScreencastArea
 
 input:
+
 x: the X coordinate of the area to capture (int)
 
 y: the Y coordinate of the area to capture (int)
