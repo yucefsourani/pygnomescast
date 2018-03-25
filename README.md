@@ -27,13 +27,13 @@ framerate   : the number of frames per second that should be recorded if possibl
 
 pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux" (String)
 
-Screencast.start():
+Screencast.start() Return:
 
 success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
-Screencast.stop():
+Screencast.stop() Return:
 
 success: whether stopping the recording was successful (True Or False)
 
@@ -59,13 +59,13 @@ framerate   : the number of frames per second that should be recorded if possibl
 
 pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux" (String)
 
-ScreencastArea.start():
+ScreencastArea.start() Return:
 
 success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
-ScreencastArea.stop():
+ScreencastArea.stop() Return:
 
 success: whether stopping the recording was successful (True Or False)
 
