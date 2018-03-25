@@ -210,7 +210,7 @@ if __name__ == "__main__":
     
 
 
-    # Exaple Screencast
+    # Example Screencast
     screencast = Screencast(file_template="/home/youcef/Record-%d-%t.webm",draw_cursor="true",framerate="30",\
                 pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
     
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     
     
     
-    # Exaple Screencast
+    # Example ScreencastArea
     #x = MonitorScreenInfo.get_monitors()[0].x
     x = MonitorScreenInfo.get_monitors()[0].x + 10
     
