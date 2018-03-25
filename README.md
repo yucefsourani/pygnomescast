@@ -61,6 +61,12 @@ success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
+# StopScreencast
+
+return:
+
+success: whether stopping the recording was successful (True Or False)
+
 
 # For more info
 
