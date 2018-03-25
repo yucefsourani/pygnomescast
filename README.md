@@ -60,3 +60,7 @@ success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
+
+# For more info
+
+https://gitlab.gnome.org/GNOME/gnome-shell/blob/master/data/org.gnome.Shell.Screencast.xml
