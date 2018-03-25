@@ -1,4 +1,4 @@
-# pygnomescast
+# pygnomescast (without sound)
 Python librarie To Record Desktop on Gnome Sell
 
 # Requires
