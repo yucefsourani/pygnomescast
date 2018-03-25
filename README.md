@@ -27,13 +27,13 @@ pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8e
 
 Screencast.start() Return:
 
-success: whether the screencast was started successfully (True Or False)
+success: whether the screencast was started successfully (True Or False) (1 or 0)
 
 filename_used: the file where the screencast is being saved (String)
 
 Screencast.stop() Return:
 
-success: whether stopping the recording was successful (True Or False)
+success: whether stopping the recording was successful (True Or False) (1 or 0)
 
 
 
@@ -57,13 +57,13 @@ pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8e
 
 ScreencastArea.start() Return:
 
-success: whether the screencast was started successfully (True Or False)
+success: whether the screencast was started successfully (True Or False) (1 or 0) 
 
 filename_used: the file where the screencast is being saved (String)
 
 ScreencastArea.stop() Return:
 
-success: whether stopping the recording was successful (True Or False)
+success: whether stopping the recording was successful (True Or False) (1 or 0)
 
 
 # For more info
