@@ -198,10 +198,10 @@ if __name__ == "__main__":
     # Get Monitors Info
     print(MonitorScreenInfo.get_monitors_number())      # Get Number Off Monitors
     print(MonitorScreenInfo.get_monitors())             # Get All Monitors
-    print(MonitorScreenInfo.get_monitors()[0].width)    # Get width For First Screen
-    print(MonitorScreenInfo.get_monitors()[0].height)   # Get height For First Screen
-    print(MonitorScreenInfo.get_monitors()[0].x)        # Get x For First Screen
-    print(MonitorScreenInfo.get_monitors()[0].y)   # Get y For First Screen
+    print(MonitorScreenInfo.get_monitors()[0].width)    # Get width For First Monitors
+    print(MonitorScreenInfo.get_monitors()[0].height)   # Get height For First Monitors
+    print(MonitorScreenInfo.get_monitors()[0].x)        # Get x For First Monitors
+    print(MonitorScreenInfo.get_monitors()[0].y)        # Get y For First Monitors
 
     print(MonitorScreenInfo.get_monitors()[0].info)   # Get All Info
     for key,value in MonitorScreenInfo.get_monitors()[0].info.items(): # Get All Info
