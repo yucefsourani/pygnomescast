@@ -211,7 +211,12 @@ if __name__ == "__main__":
 
 
     # Example Screencast
-    screencast = Screencast(file_template="/home/youcef/Record-%d-%t.webm",draw_cursor="true",framerate="30",\
+    #screencast = Screencast(file_template="/home/youcef/Record-%d-%t.webm",draw_cursor="true",framerate="30",\
+     #           pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
+    
+    # ملاحظة إذا حددنا فقط الإسم ولم نحدد المسار في file_template
+    #سيتم الحفظ في مجلد الفيديو في مجلد المنزل الخاص بالمستخدم إن لم يكن مجلد الفيديو موجود سيتم الحفظ في مجلد المنزل
+    screencast = Screencast(file_template="Record-%d-%t.webm",draw_cursor="true",framerate="30",\
                 pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
     
     print( screencast.start() )
@@ -233,9 +238,12 @@ if __name__ == "__main__":
     
     #height = MonitorScreenInfo.get_monitors()[0].height
     height = MonitorScreenInfo.get_monitors()[0].height / 2
+
+    #screencastarea = ScreencastArea(x,y,width,height,file_template="/home/youcef/Record-%d-%t.webm",draw_cursor="true",framerate="30",\
+                #pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
     
-    screencastarea = ScreencastArea(x,y,width,height,file_template="/home/youcef/Record-%d-%t.webm",draw_cursor="true",framerate="30",\
-                pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux")
+    screencastarea = ScreencastArea(x,y,width,height,file_template="Record-%d-%t.webm",draw_cursor="true",framerate="30",\
+                pipeline="vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux") 
     
     print( screencastarea.start() )
     time.sleep(5)
