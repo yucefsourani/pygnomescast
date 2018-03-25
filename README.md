@@ -15,7 +15,7 @@ sudo dnf install pygobject3 python3-gobject gtk3 python-dbus python3-dbus
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 python-dbus python3-dbus
 
 
-# Screencast
+# Screencast()
 
 input:
 
@@ -27,15 +27,19 @@ framerate   : the number of frames per second that should be recorded if possibl
 
 pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux" (String)
 
-return:
+Screencast.start():
 
 success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
+Screencast.stop():
+
+success: whether stopping the recording was successful (True Or False)
 
 
-# ScreencastArea
+
+# ScreencastArea()
 
 input:
 
@@ -55,15 +59,13 @@ framerate   : the number of frames per second that should be recorded if possibl
 
 pipeline    : the GStreamer pipeline used to encode recordings   # default "vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux" (String)
 
-return:
+ScreencastArea.start():
 
 success: whether the screencast was started successfully (True Or False)
 
 filename_used: the file where the screencast is being saved (String)
 
-# StopScreencast
-
-return:
+ScreencastArea.stop():
 
 success: whether stopping the recording was successful (True Or False)
 
